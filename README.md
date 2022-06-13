@@ -1,1 +1,1 @@
-# Bambu-2.0
+# Bambu
