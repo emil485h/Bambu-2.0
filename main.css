@@ -143,7 +143,7 @@ body {
     color: var(--font-black);
     padding: .7rem;
     margin-top: 2rem;
-    font-size: 2.5vw;
+    font-size: 1.8vw;
     white-space: nowrap;
 }
 
@@ -238,12 +238,12 @@ Header {
 }
 
 .header-nav {
-    font-family: 'Organo';
+   
     width: 200px;
     height: 100%;
     margin-top: -70px;
-    z-index: 300;
-    font-size: 55px;
+    z-index: 3;
+    
     margin-bottom: 30px;
     display: none;
     margin-left: auto;
@@ -260,6 +260,7 @@ Header {
     text-align: center;
     background-color: var(--nav-color);
     width: 100%;
+    z-index: 2;
 }
 
 .navbar-linksm ul a {
@@ -268,6 +269,9 @@ Header {
     font-size: 3vh;
 }
 
+.bold{
+    font-weight: bold;
+}
 
 /*Knapper*/
 
@@ -287,12 +291,13 @@ Header {
     display: flex;
     font-size: 12px;
     justify-content: center;
-    
+    font-size: 1.5vh;
     cursor: pointer;
     position: relative;
     font-family: "Helvetica";
     font-weight: bold;
     margin-top: 0px;
+    z-index: 1;
 }
 
 
@@ -310,13 +315,17 @@ Header {
     padding: 10px 20px;
     text-decoration: none;
     display: flex;
-    font-size: 14px;
+    
     justify-content: center;
     cursor: pointer;
     font-family: "Helvetica";
     font-weight: bold;
     white-space: nowrap;
-    margin-top: -20px
+    margin-top: -10px
+}
+
+.btn-om{
+    margin-top: 12vw;
 }
 
 
@@ -358,6 +367,9 @@ img {
     color: #E2E6E5;
     font-family: 'organo';
     margin-top: -25%;
+    font-size: 3vh;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 5px 5px 6px #000000;
+    
 }
 
 .container-btn {
@@ -392,6 +404,7 @@ img {
     border-radius: 10px;
 }
 
+
 .box4 img {
     height: 100%;
     object-fit: cover;
@@ -402,6 +415,7 @@ img {
     position: relative;
     margin-bottom: -3%;
     width: 60%;
+    font-size: 1.5vw;
     text-transform: uppercase;
     font-family: "Helvetica";
 }
@@ -409,6 +423,7 @@ img {
 .btn2 {
     position: relative;
     width: 60%;
+    font-size: 1.5vw;
     text-transform: uppercase;
     font-family: "Helvetica"
 }
@@ -416,6 +431,7 @@ img {
 .btn3 {
     position: relative;
     width: 26.4%;
+    font-size: 1.5vw;
     text-transform: uppercase;
     font-family: "Helvetica"
 }
@@ -423,6 +439,7 @@ img {
 .btn4 {
     margin-top: 20px;
     width: 26.4%;
+    font-size: 1.5vw;
 }
 
 .box {
@@ -454,7 +471,7 @@ img {
 .container-about {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -486,6 +503,10 @@ img {
 
 .pc {
     display: none;
+}
+
+.box-produkt{
+    width: 70%;
 }
 
 
@@ -591,10 +612,11 @@ footer {
     width: 30%;
     margin-left: -30%;
     position: absolute;
+    transition: .3s ease-out;
 }
 
 #img-kanin-frugt:hover {
-    transition: .6s ease-in;
+    transition: .3s ease-in;
     opacity: 1;
 }
 
@@ -1071,6 +1093,7 @@ section .dotLarge {
 /*Informationside styling*/
 
 .section-formular {
+    font-family: 'Helvetica';
     display: flex;
     width: 80%;
     justify-content: center;
@@ -1098,6 +1121,10 @@ section .dotLarge {
     flex-direction: column;
 }
 
+label{
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
 .gls {
     margin-top: 30px;
 }
@@ -1203,6 +1230,7 @@ hr {
 }
 
 .købte-også {
+    font-family: helvetica;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -1226,6 +1254,12 @@ hr {
     color: red;
 }
 
+.section-rabat img{
+    width: 50%;
+    height: 50%;
+}
+
+
 @media (min-width: 800px) {
     /*Navigationsbar styling til Mobil/Tablet*/
     .navbar {
@@ -1239,14 +1273,14 @@ hr {
         height: 130px;
     }
     .logo {
-        height: 110px
+        height: 100px
     }
     .brand-title-foot{
         align-items: center;
         /* justify-content: center; */
     }
     .logo-foot {
-        height: 20vw
+        height: 12vw
     }
     .brand-title {
         width: 30vw
@@ -1316,6 +1350,7 @@ hr {
     .box {
         max-width: 30%;
         flex: 30%;
+        font-family: helvetica
     }
     .box1 {
         margin-top: 0px
@@ -1336,7 +1371,8 @@ hr {
     }
     .box5 {
         max-height: 30vw;
-        max-width: 30%;
+        max-width: 34%;
+        margin-left: -50px;
         font-family: "Helvetica";
         line-height: 1;
        
@@ -1373,6 +1409,10 @@ hr {
        
         margin-top: 17vw;
         width: 60%
+    }
+
+    .banner h1{
+        font-size: 4vw;
     }
     /* footer slut */
     /* detaljeret side start */
@@ -1880,6 +1920,7 @@ hr {
         display: flex;
         flex-direction: row;
         columns: 2;
+        font-family: "Helvetica";
     }
     /*Kurv*/
     .pull {
@@ -1895,8 +1936,8 @@ hr {
         margin-bottom: 0px
     }
     .section-rabat img {
-        max-width: 120px;
-        max-height: 90px;
+        width: 120px;
+        height: 90px;
     }
     .rød {
         color: red;
