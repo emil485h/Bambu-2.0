@@ -620,6 +620,10 @@ footer {
     opacity: 1;
 }
 
+.Dankort{
+    width: 30px;
+    border-radius: 0px
+}
 
 /* detaljeret side styling */
 
@@ -813,11 +817,11 @@ section .dotLarge {
 }
 
 .btn-tilf {
-    margin-left: 79%;
+    margin-left: 85%;
 }
 
 .olie .btn-tilf {
-    margin-left: 44vw;
+    margin-left: 42vw;
 }
 
 
@@ -882,6 +886,8 @@ section .dotLarge {
     align-items: center;
     margin: 4vh 2vh 4vh 2vh;
 }
+
+
 
 .kokosBillede {
     width: 28vw;
@@ -1089,6 +1095,10 @@ section .dotLarge {
     height: 49px;
 }
 
+.rød{
+    color: red;
+}
+
 
 /*Informationside styling*/
 
@@ -1108,7 +1118,8 @@ section .dotLarge {
 }
 
 .section-formular header {
-    background-color: #F1ECE8
+    background-color: #F1ECE8;
+    padding-top:20px;
 }
 
 .section-formular input {
@@ -1489,7 +1500,7 @@ hr {
         margin: 4vh 0vh 4vh 0vh;
     }
     .olie .btn-tilf {
-        margin-left: 78%;
+        margin-left: 65%;
     }
     .olieCon {
         width: 25vw;
@@ -1899,6 +1910,10 @@ hr {
     .payment {
         width: 45%;
         margin: 30px;
+    }
+
+    .btn-tilf{
+        margin-left: 30vw;
     }
     .banner-payment {
         height: 200px;
