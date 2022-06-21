@@ -753,11 +753,11 @@ footer {
 } */
 
 #productFront {
-    width: 25vh;
+    width: 40vw;
 }
 
 .product {
-    width: 25vh;
+    width: 40vw;
 }
 
 .valgt {
@@ -811,7 +811,7 @@ section .dotLarge {
 /* Små cirkler */
 
 .smallDots {
-    width: 90vw;
+    width: 80vw;
     display: flex;
     justify-content: space-evenly;
     margin: 2vh auto 2vh auto;
@@ -909,7 +909,7 @@ section .dotLarge {
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
-    width: 90vw;
+    width: 60vw;
     margin: auto;
 }
 
@@ -919,11 +919,11 @@ section .dotLarge {
 }
 
 .pforslag {
-    width: 23vw;
+    width: 15vw;
 }
 
 .stor {
-    width: 20vw;
+    width: 12vw;
 }
 
 
@@ -1528,7 +1528,7 @@ hr {
         width: 40vw;
         display: flex;
         justify-content: space-evenly;
-        margin: 0;
+
     }
     .dot {
         height: 50px;
